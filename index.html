@@ -3,8 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>DnD-Poe-Rpg</title>
+    <link rel="stylesheet" href="css/base-style.css">
   </head>
   <body>
-
+    <div id="newCharacterForm">
+      Name : <input type="text" id="newCharacterName" class="newCharInputText">
+      <div id="newCharClassForm" class="newCharFormPart">
+        Class : <button onclick="prevNewCharClass()" class="newCharSelectorButton"><</button><span id="newCharClass" class="newCharText">Barbarian</span><button onclick="nextNewCharClass()" class="newCharSelectorButton">></button>
+        <div id="newCharClass">
+          <img src="" id="newCharClassPortrait">
+          <div id="newCharClassDescription" class="newCharDescription"></div>
+        </div>
+      </div>
+      <div id="newCharRaceForm" class="newCharFormPart">
+        Race : <button onclick="prevNewCharRace()" class="newCharSelectorButton"><</button><span id="newCharRace" class="newCharText">Dragonborn</span><button onclick="nextNewCharRace()" class="newCharSelectorButton">></button>
+        <div id="newCharRace">
+          <img src="" id="newCharRacePortrait">
+          <div id="newCharRaceDescription" class="newCharDescription"></div>
+        </div>
+      </div>
+      <div id="newCharBackgroundForm" class="newCharFormPart">
+        Background : <button onclick="prevNewCharBackground()" class="newCharSelectorButton"><</button><span id="newCharBackground" class="newCharText">Acolyte</span><button onclick="nextNewCharBackground()" class="newCharSelectorButton">></button>
+        <div id="newCharBackground">
+          <img src="" id="newCharBackgroundPortrait">
+          <div id="newCharBackgroundDescription" class="newCharDescription"></div>
+        </div>
+      </div>
+      <div id="newCharAlignmentForm" class="newCharFormPart">
+        Alignment : <button onclick="prevNewCharAlignment()" class="newCharSelectorButton"><</button><span id="newCharAlignment" class="newCharText">Acolyte</span><button onclick="nextNewCharAlignment()" class="newCharSelectorButton">></button>
+        <div id="newCharAlignment">
+          <img src="" id="newCharAlignmentPortrait">
+          <div id="newCharAlignmentDescription" class="newCharDescription"></div>
+        </div>
+      </div>
+    </div>
+    <div id="top" hidden>
+      <div id="character">
+        <div id="characterNameValue">Isgrid Shorethor</div>
+        <div id="characterInfo">
+          <div id="characterClass" class="info">Class: <span id="characterClassValue">Ranger</span></div>
+          <div id="characterLevel" class="info">Level: <span id="characterLevelValue">5</span></div>
+          <div id="characterBackground" class="info">Background: <span id="characterBackgroundValue">Folk hero</span></div>
+          <div id="characterRace" class="info">Race: <span id="characterRaceValue">Orc</span></div>
+          <div id="characterAlignment" class="info">Alignment: <span id="characterAlignmentValue">Lawful Evil</span></div>
+          <div id="characterExperience" class="info">Experience: <span id="characterExperienceValue">4500</span></div>
+        </div>
+      </div>
+    </div>
+    <div id="game" hidden>
+      <div id="stats">
+        <div id="strength" class="stat">Strength<br><span id="strengthValue" class="statValue">6</span></div>
+        <div id="dexterity" class="stat">Dexterity<br><span id="strengthValue" class="statValue">6</span></div>
+        <div id="constitution" class="stat">Constitution<br><span id="strengthValue" class="statValue">6</span></div>
+        <div id="intelligence" class="stat">Intelligence<br><span id="strengthValue" class="statValue">6</span></div>
+        <div id="wisdom" class="stat">Wisdom<br><span id="strengthValue" class="statValue">6</span></div>
+        <div id="charisma" class="stat">Charisma<br><span id="strengthValue" class="statValue">6</span></div>
+      </div>
+      <div id="map">
+        map
+      </div>
+      <div id="menu">
+        menu
+      </div>
+    </div>
   </body>
+  <script type="text/javascript" src="js/classes.js"></script>
+  <script type="text/javascript" src="js/races.js"></script>
+  <script type="text/javascript" src="js/backgrounds.js"></script>
+  <script type="text/javascript" src="js/alignments.js"></script>
+  <script type="text/javascript" src="js/helperFunctions.js"></script>
+  <script type="text/javascript" src="js/htmlUpdates.js"></script>
+  <script type="text/javascript" src="js/createHtmlElements.js"></script>
+  <script type="text/javascript" src="js/buttonFunctions.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </html>
